@@ -68,6 +68,18 @@ const Header = styled.header`
   align-items: center;
   padding: 18px 6%;
   background-color: #0e0f0f;
+  position:relative;
+  box-shadow: 0 50px 200px 150px rgba(0,0,0,0.8);
+  &::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    right: 0%;
+    background: linear-gradient(to right, #01e1ff, #6519ff ,#d214e5,#fb021a);
+    z-index: 1;
+  }
   .left {
     img {
       height: 40px;
@@ -214,6 +226,7 @@ border-top:4px solid #353532;
 padding: 20px 30px;
 color: #747474;
 margin-top:80px;
+box-shadow: 0 0px 200px 150px rgba(0,0,0,0.8);
   display: flex;
   justify-content:space-between;
   align-items:Center;
